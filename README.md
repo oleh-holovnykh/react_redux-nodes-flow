@@ -1,14 +1,8 @@
-# Project Name
-
-Short project description.
-
 ## Demo
 
 [Demo Link](https://oleh-holovnykh.github.io/react_redux-nodes-flow/)
 
 ## Description
-
-Full project description, including features and functionalities.
 
 The project is built using the following technologies:
 
