@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+/* eslint-disable */
+import React,{ memo } from 'react';
 import './App.css';
+import ReactFlow from 'reactflow';
+import 'reactflow/dist/style.css';
+import { nodeTypes } from './types/nodeTypes';
+import { useAppSelector } from './app/hooks';
 
-function App() {
+const App: React.FC = memo(() => {
+  const { nodes } = useAppSelector((state) => state.nodes);
+  const { edges } = useAppSelector((state) => state.edges);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: '100vh' }}>
+      <ReactFlow 
+        nodes={nodes}
+        edges={edges}
+        nodeTypes={nodeTypes}
+      />
     </div>
   );
-}
+});
 
 export default App;

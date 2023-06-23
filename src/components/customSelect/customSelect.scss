@@ -1,0 +1,29 @@
+.dropdown-check-list {
+  display: block;
+  border-radius: 4px;
+}
+
+.anchor {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #479F76;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.dropdown-check-list.visible .anchor {
+  color: #7c7c7c;
+  border-color: #EAF2FF;
+}
+
+.anchorIcon {
+  position: absolute;
+  right: 4px;
+  top: 54%;
+  transform: translateY(-50%)
+}
+

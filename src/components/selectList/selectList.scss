@@ -1,0 +1,17 @@
+.dropdown-check-list.visible .items {
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #fff;
+  width: 97%;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.items {
+  padding: 0;
+  display: none;
+  margin: 0;
+  border: 1px solid #EAF2FF;
+  border-top: none;
+}
